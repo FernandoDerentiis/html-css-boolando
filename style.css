@@ -1,0 +1,63 @@
+/* # RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* # UTILS */
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1000px;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* PRODUCT*/
+
+.products > .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.products .product-card {
+  flex: 1 0 30%;
+
+  min-height: 300px;
+
+  position: relative;
+  cursor: pointer;
+}
+.product-card:hover .card-image .product-image {
+  display: none;
+}
+.product-card:hover .card-image .add-tocard {
+  display: block;
+}
+.product-card .card-image .add-tocard {
+  display: none;
+}
+
+.products .product-card:hover {
+  background-color: white;
+}
+
+.product-card .card-sconto {
+  position: absolute;
+
+  left: 0px;
+  background-color: red;
+  bottom: 20px;
+  color: white;
+  line-height: 20px;
+  text-align: center;
+}
